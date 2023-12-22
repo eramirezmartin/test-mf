@@ -1,0 +1,14 @@
+<div>
+  <a [routerLink]="[{ outlets: { 'outlet-a': ['comp-a'] } }]">click to A</a
+  ><br /><br />
+  <a [routerLink]="[{ outlets: { 'outlet-b': ['comp-b'] } }]">click to B</a
+  ><br /><br />
+  <a [routerLink]="[{ outlets: { 'outlet-c': ['mf-c'] } }]">click to MF</a
+  ><br /><br />
+  <a [routerLink]="[{ outlets: { 'outlet-a': null,'outlet-b': null,'outlet-c': null }}]">reset</a><br /><br />
+</div>
+<section>
+  <router-outlet name="outlet-a"></router-outlet>
+  <router-outlet name="outlet-b"></router-outlet>
+  <router-outlet name="outlet-c"></router-outlet>
+</section>
